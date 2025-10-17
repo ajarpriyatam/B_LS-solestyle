@@ -16,9 +16,9 @@ const connect = async () => {
     const opts = {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      bufferCommands: false,
+      bufferCommands: true, // Enable buffering for serverless
       bufferMaxEntries: 0,
-      serverSelectionTimeoutMS: 5000,
+      serverSelectionTimeoutMS: 10000,
       socketTimeoutMS: 45000,
     };
 
